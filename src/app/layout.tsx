@@ -4,7 +4,6 @@ import "./globals.css";
 import 'katex/dist/katex.css';
 import React from "react";
 import NextAuthProvider from "@/context/next-auth";
-import AmplitudeContextProvider from "@/context/amplitude";
 import {getLocale, getMessages} from 'next-intl/server';
 import {NextIntlClientProvider} from 'next-intl';
 
@@ -35,10 +34,8 @@ export default async function RootLayout({children, modal}: Readonly<{
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider messages={messages}>
             <NextAuthProvider>
-                <AmplitudeContextProvider>
-                    {children}
-                    {modal}
-                </AmplitudeContextProvider>
+                {children}
+                {modal}
             </NextAuthProvider>
         </NextIntlClientProvider>
         </body>

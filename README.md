@@ -1,19 +1,33 @@
-# 🚀 **OpenHealth**
+# 🚀 **OpenHealth - Privacy-First Fork**
 
 <div align="center">
 
-**AI Health Assistant | Powered by Your Data**
+**AI Health Assistant | Powered by Your Data | 100% Privacy Protected**
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Web-blue?style=for-the-badge" alt="Platform">
   <img src="https://img.shields.io/badge/Language-TypeScript-blue?style=for-the-badge" alt="Language">
   <img src="https://img.shields.io/badge/Framework-Next.js-black?style=for-the-badge" alt="Framework">
+  <img src="https://img.shields.io/badge/Privacy-First-green?style=for-the-badge" alt="Privacy">
 </p>
 
-> **📢 Now Available on Web!**  
-> We've made OpenHealth more accessible with two tailored options:  
-> **[Clinic](https://qna.open-health.me/)** - Quick and easy health consultations  
-> **[Full Platform](https://www.open-health.me/)** - Advanced tools for comprehensive health management
+> **🛡️ PRIVACY-FIRST FORK**  
+> This is a privacy-enhanced fork that **completely removes all data collection and tracking**.  
+> Unlike the original project, this version ensures **100% local-first operation** with no hidden data uploads.
+
+## 🚨 **Key Privacy Improvements**
+
+✅ **Removed all data collection mechanisms:**
+- ❌ Tally.so forms that collected user health data with unique IDs
+- ❌ Amplitude analytics and user tracking
+- ❌ Hidden external service links that harvested medical information
+- ❌ Automatic data uploads to third-party platforms
+
+✅ **Enhanced privacy protections:**
+- 🔒 **Truly local-first**: All data stays on your machine
+- 🔒 **No user tracking**: Zero analytics or telemetry
+- 🔒 **Transparent operation**: No hidden external connections
+- 🔒 **User choice**: External services (like Upstage AI) require explicit opt-in
 
 ### 🌍 Choose Your Language
 [English](README.md) | [Français](i18n/readme/README.fr.md) | [Deutsch](i18n/readme/README.de.md) | [Español](i18n/readme/README.es.md) | [한국어](i18n/readme/README.ko.md) | [中文](i18n/readme/README.zh.md) | [日本語](i18n/readme/README.ja.md) | [Українська](i18n/readme/README.uk.md) | [Русский](i18n/readme/README.ru.md) | [اردو](i18n/readme/README.ur.md)
@@ -30,6 +44,34 @@
 
 > OpenHealth helps you **take charge of your health data**. By leveraging AI and your personal health information,
 > OpenHealth provides a private assistant that helps you better understand and manage your health. You can run it completely locally for maximum privacy.
+
+## 🔍 **Privacy Comparison: Original vs This Fork**
+
+| Feature | Original Project | This Privacy Fork |
+|---------|------------------|-------------------|
+| **Data Collection** | ❌ Hidden user ID tracking via Tally.so | ✅ Zero data collection |
+| **Analytics** | ❌ Amplitude user behavior tracking | ✅ No analytics or telemetry |
+| **External Links** | ❌ Medical data harvesting websites | ✅ Removed all data collection links |
+| **User Consent** | ❌ No disclosure of data collection | ✅ Transparent about all external services |
+| **Local Operation** | ⚠️ Claims local but uploads data | ✅ Truly local-first operation |
+| **Medical Privacy** | ❌ Health data sent to external servers | ✅ Health data never leaves your machine |
+
+### 🚨 **What We Removed**
+
+The original project had several **hidden data collection mechanisms** that violated user privacy:
+
+1. **Tally.so Forms**: Collected detailed health information along with unique user IDs
+2. **Amplitude Analytics**: Tracked user behavior and sessions across the application  
+3. **External Medical Sites**: Links to data harvesting platforms disguised as "consultation" services
+4. **Automatic Uploads**: Health documents automatically sent to third-party AI services
+
+### 🛡️ **Our Privacy-First Approach**
+
+This fork ensures:
+- **No hidden tracking**: Every external service requires explicit user consent
+- **Local-first by default**: Data processing happens on your machine
+- **Transparent operation**: All external connections are clearly documented
+- **User control**: You decide if and when to use cloud services
 
 ## ✨ Project Features
 
@@ -122,9 +164,9 @@ graph LR
 <details open>
 <summary><b>Installation Instructions</b></summary>
 
-1. **Clone the Repository:**
+1. **Clone the Privacy-First Fork:**
    ```bash
-   git clone https://github.com/OpenHealthForAll/open-health.git
+   git clone https://github.com/dreamlx/open-health.git
    cd open-health
    ```
 

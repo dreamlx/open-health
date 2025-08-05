@@ -1,38 +1,21 @@
+// AMPLITUDE TRACKING DISABLED FOR PRIVACY
+// This file has been disabled to prevent user tracking and data collection
+
 "use client";
-import React, {createContext, useEffect} from "react";
-import {init, setUserId, track} from "@amplitude/analytics-browser";
-import {useSession} from "next-auth/react";
+import React from "react";
 
-const AMPLITUDE_API_KEY: string | undefined = process.env.NEXT_PUBLIC_AMPLITUDE_API_KEY;
+// Dummy context for compatibility
+export const AmplitudeContext = React.createContext({});
 
-export const AmplitudeContext = createContext({});
-
-type TrackFunctionArgs = Parameters<typeof track>;
-
-const trackAmplitudeEvent = (args: TrackFunctionArgs) => {
-    track(...args);
-}
+// No-op tracking functions for compatibility
+const trackAmplitudeEvent = () => {
+    // Privacy: No tracking performed
+};
 
 const AmplitudeContextProvider = ({children}: React.PropsWithChildren) => {
-    const {data: session} = useSession();
-
-    useEffect(() => {
-        if (!AMPLITUDE_API_KEY) return
-        init(AMPLITUDE_API_KEY, undefined, {
-            autocapture: true,
-        });
-    }, []);
-
-    useEffect(() => {
-        if (!AMPLITUDE_API_KEY) return
-        if (!session) return;
-        const userId = session.user?.id;
-        if (!userId) return;
-        setUserId(userId);
-    }, [session]);
-
+    // Privacy: No analytics initialization or user tracking
     return (
-        <AmplitudeContext.Provider value={({trackAmplitudeEvent})}>
+        <AmplitudeContext.Provider value={{trackAmplitudeEvent}}>
             {children}
         </AmplitudeContext.Provider>
     );

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker compose:*)",
+      "WebFetch(domain:tally.so)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}

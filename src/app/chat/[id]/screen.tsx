@@ -142,27 +142,6 @@ export default function Screen(
                         <div ref={messagesEndRef}/>
                     </div>
                     <div className="mb-16 md:mb-0">
-                        <div className="p-4 flex items-center justify-between">
-                            <div className="text-sm text-blue-800 flex-1 pr-4"/>
-                            <div className="flex gap-2 items-center shrink-0">
-                                <Button
-                                    variant="outline"
-                                    size="sm"
-                                    className="text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800"
-                                    onClick={() => window.open('https://openhealthforall.channel.io', '_blank')}
-                                >
-                                    {tf('needHelpWithYourIssue')}
-                                </Button>
-                                <Button
-                                    variant="outline"
-                                    size="sm"
-                                    className="text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800"
-                                    onClick={() => window.open(`https://tally.so/r/mDZrYq?user_id=${auth?.user?.id}`, '_blank')}
-                                >
-                                    {tf('askADoctor')}
-                                </Button>
-                            </div>
-                        </div>
                         <div className="border-t p-4 z-10 md:static fixed bottom-0 left-0 w-full bg-white">
                             <div className="flex gap-2">
                                 <Input

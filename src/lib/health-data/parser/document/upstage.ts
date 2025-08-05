@@ -22,7 +22,9 @@ export class UpstageDocumentParser extends BaseDocumentParser {
     }
 
     get enabled(): boolean {
-        return true
+        // NOTE: This service uploads documents to Upstage AI servers for processing
+        // Only enabled in local deployment where users must explicitly provide API keys
+        return currentDeploymentEnv === 'local'
     }
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
