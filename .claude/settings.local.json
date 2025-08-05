@@ -3,7 +3,8 @@
     "allow": [
       "Bash(docker compose:*)",
       "WebFetch(domain:tally.so)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git push:*)"
     ],
     "deny": []
   }

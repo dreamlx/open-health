@@ -175,6 +175,9 @@ graph LR
    # Copy environment file
    cp .env.example .env
 
+   # Optional: Configure custom port (default is 3000)
+   # Edit .env file and set NEXT_PUBLIC_PORT=4001 for custom port
+
    # Start the application using Docker/Podman Compose
    docker/podman compose --env-file .env up
    ```
