@@ -16,7 +16,6 @@ import {ChatRole} from "@prisma/client";
 import ChatSettingSideBar from "@/components/chat/chat-setting-side-bar";
 import {useTranslations} from "next-intl";
 import {NavLinks} from "@/components/ui/nav-links";
-import {useSession} from "next-auth/react";
 
 interface ScreenProps {
     isMobile: boolean;
@@ -26,9 +25,7 @@ export default function Screen(
     {isMobile}: ScreenProps
 ) {
     const {id} = useParams<{ id: string }>();
-    const {data: auth} = useSession()
     const t = useTranslations('Chat')
-    const tf = useTranslations('Feedback')
 
     const messagesEndRef = useRef<HTMLDivElement>(null);
 

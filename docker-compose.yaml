@@ -29,6 +29,12 @@ services:
     restart: always
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@database:5432/${POSTGRES_DB}
+      NEXT_PUBLIC_URL: ${NEXT_PUBLIC_URL}
+      AUTH_SECRET: ${AUTH_SECRET}
+      AUTH_TRUST_HOST: ${AUTH_TRUST_HOST}
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY}
+      DEPLOYMENT_ENV: ${DEPLOYMENT_ENV}
+      NEXT_PUBLIC_DEPLOYMENT_ENV: ${NEXT_PUBLIC_DEPLOYMENT_ENV}
 
 volumes:
   postgres_data:
